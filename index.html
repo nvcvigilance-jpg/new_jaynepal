@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="ne">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>जय नेपाल ट्रेडर्स | Jay Nepal Traders - Surgical & Hospital Equipment Supplier</title>
+    <meta name="description" content="जय नेपाल ट्रेडर्स - नेपालभरका अस्पताल, क्लिनिक र ल्याबहरूका लागि उच्च गुणस्तरीय सर्जिकल र मेडिकल उपकरण आपूर्तिकर्ता। DDA Registered. Instant Order via WhatsApp & Email." />
+    <meta property="og:title" content="जय नेपाल ट्रेडर्स | Jay Nepal Traders - Surgical & Medical Supplies" />
+    <meta property="og:description" content="नेपालभरका अस्पताल र स्वास्थ्य संस्थाहरूका लागि भरपर्दो सर्जिकल सामान र मेडिकल उपकरण आपूर्तिकर्ता।" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Fonts: Mukta (Nepali) & Plus Jakarta Sans (English) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Pure Standalone CSS -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="lang-ne">
+
+    <!-- Top Announcement Bar -->
+    <aside class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-badge">
+          <span>नेपाल औषधि व्यवस्था विभाग दर्ता नं: १४२/MED/२०७९</span>
+          <span>•</span>
+          <span>PAN/VAT: ६१५४०९८२१</span>
+        </div>
+        <div class="top-bar-contacts">
+          <a href="tel:+9779851000000">
+            <span>📞</span>
+            <span class="font-bold">+977-9851000000</span>
+          </a>
+          <a href="mailto:info@jaynepaltraders.com.np">
+            <span>✉️</span>
+            <span>info@jaynepaltraders.com.np</span>
+          </a>
+          <span style="color: #64748b;">|</span>
+          <span style="color: #cbd5e1;">त्रिपुरेश्वर, काठमाडौं</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Navigation Header -->
+    <header class="navbar-wrapper">
+      <div class="container navbar">
+        
+        <!-- Logo -->
+        <a href="#hero" class="brand-logo" onclick="scrollToSection('hero'); return false;">
+          <div class="js-brand-logo"></div>
+          <div class="logo-text">
+            <span class="logo-title-ne">जय नेपाल ट्रेडर्स</span>
+            <span class="logo-title-en">Jay Nepal Traders</span>
+            <span class="logo-tagline" data-lang-ne="सर्जिकल तथा अस्पताल उपकरण आपूर्तिकर्ता" data-lang-en="Surgical & Hospital Equipment Supplier">सर्जिकल तथा अस्पताल उपकरण आपूर्तिकर्ता</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link" data-lang-ne="गृहपृष्ठ" data-lang-en="Home">गृहपृष्ठ</a></li>
+            <li><a href="#catalog" class="nav-link" data-lang-ne="उत्पादन क्याटलग" data-lang-en="Products">उत्पादन क्याटलग</a></li>
+            <li><a href="#services" class="nav-link" data-lang-ne="अस्पताल सेवाहरू" data-lang-en="Hospital Solutions">अस्पताल सेवाहरू</a></li>
+            <li><a href="#why-us" class="nav-link" data-lang-ne="हामी किन?" data-lang-en="Why Choose Us">हामी किन?</a></li>
+            <li><a href="#clients" class="nav-link" data-lang-ne="अस्पतालहरू" data-lang-en="Hospital Network">अस्पतालहरू</a></li>
+            <li><a href="#contact" class="nav-link" data-lang-ne="सम्पर्क" data-lang-en="Contact">सम्पर्क</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          
+          <!-- Language Toggle Button -->
+          <button type="button" id="btnLangToggle" class="btn-lang" onclick="setLanguage(currentLang === 'ne' ? 'en' : 'ne')">
+            🇬🇧 English
+          </button>
+
+          <!-- Quote Cart Toggle Button -->
+          <button type="button" class="btn-cart-nav" onclick="openCartDrawer()" title="Quotation Cart">
+            <span>🛒</span>
+            <span data-lang-ne="कोटेशन" data-lang-en="Quote">कोटेशन</span>
+            <span id="navCartCount" class="cart-badge" style="display: none;">0</span>
+          </button>
+
+          <!-- Quick RFQ Button -->
+          <button type="button" class="btn-primary" onclick="openQuickRfq()" style="display: none;" id="btnDesktopRfq">
+            <span data-lang-ne="कोटेशन अनुरोध" data-lang-en="Request RFQ">कोटेशन अनुरोध</span>
+          </button>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button type="button" class="btn-mobile-menu" onclick="toggleMobileMenu()" aria-label="Toggle Navigation Menu">
+            <svg width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileNavDrawer" class="mobile-nav">
+        <div class="container">
+          <a href="#hero" class="mobile-nav-link" onclick="toggleMobileMenu(); scrollToSection('hero');" data-lang-ne="गृहपृष्ठ" data-lang-en="Home">गृहपृष्ठ</a>
+          <a href="#catalog" class="mobile-nav-link" onclick="toggleMobileMenu(); scrollToSection('catalog');" data-lang-ne="उत्पादन क्याटलग" data-lang-en="Products">उत्पादन क्याटलग</a>
+          <a href="#services" class="mobile-nav-link" onclick="toggleMobileMenu(); scrollToSection('services');" data-lang-ne="अस्पताल सेवाहरू" data-lang-en="Hospital Solutions">अस्पताल सेवाहरू</a>
+          <a href="#why-us" class="mobile-nav-link" onclick="toggleMobileMenu(); scrollToSection('why-us');" data-lang-ne="हामी किन?" data-lang-en="Why Choose Us">हामी किन?</a>
+          <a href="#clients" class="mobile-nav-link" onclick="toggleMobileMenu(); scrollToSection('clients');" data-lang-ne="अस्पतालहरू" data-lang-en="Hospital Network">अस्पतालहरू</a>
+          <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu(); scrollToSection('contact');" data-lang-ne="सम्पर्क" data-lang-en="Contact">सम्पर्क</a>
+          <div style="padding: 0.75rem 0; display: flex; gap: 0.5rem;">
+            <button type="button" class="btn-primary" style="flex: 1;" onclick="toggleMobileMenu(); openQuickRfq();" data-lang-ne="कोटेशन अनुरोध" data-lang-en="Request RFQ">कोटेशन अनुरोध</button>
+            <button type="button" class="btn-whatsapp" style="flex: 1;" onclick="toggleMobileMenu(); window.open('https://wa.me/9779851000000', '_blank');" data-lang-ne="WhatsApp" data-lang-en="WhatsApp">WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- 1. Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            
+            <div>
+              <div class="hero-badge">
+                <span>🛡️</span>
+                <span data-lang-ne="नेपाल औषधि व्यवस्था विभाग (DDA) दर्ता तथा मान्यता प्राप्त" data-lang-en="DDA Nepal Registered & Verified Healthcare Supplier">नेपाल औषधि व्यवस्था विभाग (DDA) दर्ता तथा मान्यता प्राप्त</span>
+              </div>
+
+              <h1 class="hero-title">
+                <span data-lang-ne="नेपालका अस्पताल तथा स्वास्थ्य संस्थाहरूका लागि" data-lang-en="Precision Medical Supplies for">नेपालका अस्पताल तथा स्वास्थ्य संस्थाहरूका लागि</span><br />
+                <span style="color: var(--primary);" data-lang-ne="भरपर्दो सर्जिकल र मेडिकल उपकरण" data-lang-en="Hospitals & Clinics in Nepal">भरपर्दो सर्जिकल र मेडिकल उपकरण</span>
+              </h1>
+
+              <p class="hero-description" data-lang-ne="काठमाडौं त्रिपुरेश्वरस्थित शोरुमबाट नेपालका ७७ वटै जिल्लामा जर्मन-ग्रेड शल्यक्रिया औजार, छायाँरहित ओटी लाइट, ५-फङ्सन इलेक्ट्रिक आइसियू बेड र मेडिकल कन्ज्युमेबल्सको तत्काल आपूर्ति र बायोमेडिकल इन्जिनियरिङ सेवा।" data-lang-en="From Tripureshwor, Kathmandu, delivering precision surgical sets, shadowless OT lights, 5-function ICU beds, and sterile consumables with official warranty across all 77 districts of Nepal.">
+                काठमाडौं त्रिपुरेश्वरस्थित शोरुमबाट नेपालका ७७ वटै जिल्लामा जर्मन-ग्रेड शल्यक्रिया औजार, छायाँरहित ओटी लाइट, ५-फङ्सन इलेक्ट्रिक आइसियू बेड र मेडिकल कन्ज्युमेबल्सको तत्काल आपूर्ति र बायोमेडिकल इन्जिनियरिङ सेवा।
+              </p>
+
+              <div class="hero-cta-group">
+                <button type="button" class="btn-primary" onclick="scrollToSection('catalog')">
+                  <span data-lang-ne="सामानहरूको क्याटलग हेर्नुहोस्" data-lang-en="Browse Product Catalog">सामानहरूको क्याटलग हेर्नुहोस्</span>
+                  <span>↓</span>
+                </button>
+
+                <button type="button" class="btn-whatsapp" onclick="window.open('https://wa.me/9779851000000?text=' + encodeURIComponent('नमस्ते जय नेपाल ट्रेडर्स, मलाई अस्पतालका लागि सर्जिकल सामानको अर्डर गर्नु परेको छ।'), '_blank')">
+                  <span>💬</span>
+                  <span data-lang-ne="ह्वाट्सएप परामर्श (WhatsApp)" data-lang-en="WhatsApp Consultation">ह्वाट्सएप परामर्श (WhatsApp)</span>
+                </button>
+
+                <button type="button" class="btn-outline" onclick="openQuickRfq()">
+                  <span data-lang-ne="कोटेशन फारम (RFQ)" data-lang-en="Request Quotation">कोटेशन फारम (RFQ)</span>
+                </button>
+              </div>
+
+              <!-- Trust Metrics Bar -->
+              <div class="trust-metrics-row">
+                <div class="metric-card">
+                  <div class="metric-icon">✓</div>
+                  <div>
+                    <div class="metric-label" data-lang-ne="DDA दर्ता" data-lang-en="DDA Certified">DDA दर्ता</div>
+                    <div class="metric-sub" data-lang-ne="१४२/MED/२०७९" data-lang-en="Reg 142/MED">१४२/MED/२०७९</div>
+                  </div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-icon">⚡</div>
+                  <div>
+                    <div class="metric-label" data-lang-ne="द्रुत डेलिभरी" data-lang-en="Fast Dispatch">द्रुत डेलिभरी</div>
+                    <div class="metric-sub" data-lang-ne="४-घण्टा उपत्यकामा" data-lang-en="4h Local / 24h Nepal">४-घण्टा उपत्यकामा</div>
+                  </div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-icon">📄</div>
+                  <div>
+                    <div class="metric-label" data-lang-ne="भ्याट बिल" data-lang-en="100% Tax Bill">भ्याट बिल</div>
+                    <div class="metric-sub" data-lang-ne="संस्थागत छुट" data-lang-en="Hospital Discount">संस्थागत छुट</div>
+                  </div>
+                </div>
+
+                <div class="metric-card">
+                  <div class="metric-icon">🔧</div>
+                  <div>
+                    <div class="metric-label" data-lang-ne="बायोमेडिकल सेवा" data-lang-en="Biomedical AMC">बायोमेडिकल सेवा</div>
+                    <div class="metric-sub" data-lang-ne="वारेन्टी र स्पेयर पार्टस" data-lang-en="Warranty & Spares">वारेन्टी र स्पेयर पार्टस</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Hero Visual Showcase -->
+            <div class="hero-visual">
+              <div class="hero-card-featured">
+                <div class="hero-card-img-wrapper">
+                  <img 
+                    src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&q=80" 
+                    alt="Operation Theater & Critical Care Equipment" 
+                  />
+                  <div class="hero-card-floating-badge">
+                    <span>🏥</span>
+                    <span data-lang-ne="त्रिपुरेश्वर शोरुममा प्रत्यक्ष अवलोकन" data-lang-en="Live Showroom in Tripureshwor">त्रिपुरेश्वर शोरुममा प्रत्यक्ष अवलोकन</span>
+                  </div>
+                </div>
+
+                <div class="hero-card-content">
+                  <div class="hero-card-tags">
+                    <span class="tag-pill" style="background: #fee2e2; color: #991b1b; font-weight: 800;">DDA Verified</span>
+                    <span class="tag-pill">ISO 13485</span>
+                    <span class="tag-pill">CE Certified</span>
+                  </div>
+                  <h3 class="hero-card-title" data-lang-ne="अस्पतालका लागि पूर्ण सर्जिकल तथा क्रिटिकल केयर सेटअप" data-lang-en="Comprehensive Surgical & Critical Care Solutions">
+                    अस्पतालका लागि पूर्ण सर्जिकल तथा क्रिटिकल केयर सेटअप
+                  </h3>
+                  <p class="hero-card-desc" data-lang-ne="शल्यक्रिया औजार सेट, छायाँरहित ओटी लाइट, ५-फङ्सन इलेक्ट्रिक बेड, क्युटरी मेसिन र पेसेन्ट मोनिटरिङका सम्पूर्ण सामानहरू।" data-lang-en="High-precision surgery sets, operating lights, patient monitors, cautery generators, and turnkey hospital gas pipelines.">
+                    शल्यक्रिया औजार सेट, छायाँरहित ओटी लाइट, ५-फङ्सन इलेक्ट्रिक बेड, क्युटरी मेसिन र पेसेन्ट मोनिटरिङका सम्पूर्ण सामानहरू।
+                  </p>
+
+                  <div style="display: flex; gap: 0.5rem;">
+                    <button type="button" class="btn-primary" style="flex: 1; font-size: 0.8rem; padding: 0.5rem;" onclick="scrollToSection('catalog')">
+                      <span data-lang-ne="क्याटलग हेर्नुहोस्" data-lang-en="Explore Products">क्याटलग हेर्नुहोस्</span>
+                    </button>
+                    <button type="button" class="btn-outline" style="flex: 1; font-size: 0.8rem; padding: 0.5rem;" onclick="openQuickRfq()">
+                      <span data-lang-ne="दररेट सोधपुछ" data-lang-en="Get Pricing">दररेट सोधपुछ</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Product Catalog Section -->
+      <section id="catalog" class="section">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-badge" data-lang-ne="उत्पादन क्याटलग" data-lang-en="Product Catalog">उत्पादन क्याटलग</div>
+            <h2 class="section-title" data-lang-ne="शल्यक्रिया तथा अस्पताल उपकरणहरूको सूची" data-lang-en="Hospital & Surgical Equipment Catalog">
+              शल्यक्रिया तथा अस्पताल उपकरणहरूको सूची
+            </h2>
+            <p class="section-subtitle" data-lang-ne="अन्तर्राष्ट्रिय गुणस्तर प्रमाणित, नेपाल औषधि व्यवस्था विभाग (DDA) मा दर्ता भएका सर्जिकल औजार र अस्पतालका आवश्यक सामानहरू।" data-lang-en="Browse high-grade surgical instruments, OT/ICU machinery, hospital beds, and consumables.">
+              अन्तर्राष्ट्रिय गुणस्तर प्रमाणित, नेपाल औषधि व्यवस्था विभाग (DDA) मा दर्ता भएका सर्जिकल औजार र अस्पतालका आवश्यक सामानहरू।
+            </p>
+          </div>
+
+          <!-- Search & Filter Controls -->
+          <div class="catalog-controls">
+            
+            <div class="search-bar-row">
+              <div class="search-input-wrapper">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                  type="text" 
+                  id="catalogSearchInput" 
+                  class="search-input" 
+                  placeholder="सामानको नाम, SKU कोड वा प्रकार खोजी गर्नुहोस् (उदा: क्युटरी, बेड, क्यानुला, लाइट)..." 
+                />
+              </div>
+
+              <!-- Urgent 4-hour dispatch filter toggle -->
+              <button type="button" id="btnFilterUrgent" class="filter-urgent-toggle" onclick="toggleUrgentFilter()">
+                <span>⚡</span>
+                <span data-lang-ne="आकस्मिक ४-घण्टा उपलब्ध सामान" data-lang-en="Emergency 4-Hr Dispatch Only">आकस्मिक ४-घण्टा उपलब्ध सामान</span>
+              </button>
+
+              <div id="productCountDisplay" style="font-size: 0.8rem; font-weight: 700; color: #64748b;"></div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div id="categoryTabsContainer" class="category-tabs-scroll">
+              <!-- Rendered dynamically by script.js -->
+            </div>
+
+          </div>
+
+          <!-- Products Grid -->
+          <div id="productsGrid" class="products-grid">
+            <!-- Rendered dynamically by script.js -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 3. Hospital Turnkey Solutions & Engineering -->
+      <section id="services" class="section section-alt">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-badge" style="background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe;" data-lang-ne="अस्पताल पूर्वाधार तथा सेवाहरू" data-lang-en="Hospital Turnkey Solutions">
+              अस्पताल पूर्वाधार तथा सेवाहरू
+            </div>
+            <h2 class="section-title" data-lang-ne="अपरेसन थिएटर देखि आइसियू सम्मका पूर्ण समाधान" data-lang-en="Turnkey Cleanroom OT & ICU Engineering">
+              अपरेसन थिएटर देखि आइसियू सम्मका पूर्ण समाधान
+            </h2>
+            <p class="section-subtitle" data-lang-ne="सामान आपूर्ति मात्र नभई अस्पतालको सुरुवाती इन्जिनियरिङ, मेडिकल ग्यास पाइपलाइन, जडान र वार्षिक मर्मत सम्भार (AMC) समेत हामी गर्दछौं।" data-lang-en="End-to-end modular OT cleanrooms, medical gas pipeline engineering, equipment commissioning, and preventive biomedical maintenance.">
+              सामान आपूर्ति मात्र नभई अस्पतालको सुरुवाती इन्जिनियरिङ, मेडिकल ग्यास पाइपलाइन, जडान र वार्षिक मर्मत सम्भार (AMC) समेत हामी गर्दछौं।
+            </p>
+          </div>
+
+          <!-- Services Bento Grid -->
+          <div id="servicesGrid" class="services-grid">
+            <!-- Rendered dynamically by script.js -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 4. Why Choose Us & Compliance -->
+      <section id="why-us" class="section">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-badge" data-lang-ne="गुणस्तर र विश्वसनीयता" data-lang-en="Quality & Compliance">गुणस्तर र विश्वसनीयता</div>
+            <h2 class="section-title" data-lang-ne="अस्पतालहरूले जय नेपाल ट्रेडर्स नै किन रोज्छन्?" data-lang-en="Why Healthcare Institutions Trust Jay Nepal Traders">
+              अस्पतालहरूले जय नेपाल ट्रेडर्स नै किन रोज्छन्?
+            </h2>
+            <p class="section-subtitle" data-lang-ne="बिरामीको जीवन रक्षा गर्ने संवेदनशील क्षेत्रमा गुणस्तरमा कुनै सम्झौता हुँदैन। हामी अस्पतालहरूलाई भरपर्दो साझेदारी प्रदान गर्दछौं।" data-lang-en="In critical medical care, quality and reliability are non-negotiable. We bridge top global surgical manufacturing with Nepal.">
+              बिरामीको जीवन रक्षा गर्ने संवेदनशील क्षेत्रमा गुणस्तरमा कुनै सम्झौता हुँदैन। हामी अस्पतालहरूलाई भरपर्दो साझेदारी प्रदान गर्दछौं।
+            </p>
+          </div>
+
+          <!-- 4 Pillars Grid -->
+          <div class="pillars-grid">
+            
+            <div class="pillar-card">
+              <div class="pillar-icon">📄</div>
+              <h3 class="pillar-title" data-lang-ne="DDA नेपाल तथा ISO प्रमाणीकरण" data-lang-en="DDA Nepal & ISO 13485">DDA नेपाल तथा ISO प्रमाणीकरण</h3>
+              <p class="pillar-desc" data-lang-ne="हाम्रा सबै सर्जिकल उपकरण र औषधिजन्य सामानहरू नेपाल औषधि व्यवस्था विभाग (DDA) मा विधिवत दर्ता तथा अन्तर्राष्ट्रिय गुणस्तर प्रमाणित छन्।" data-lang-en="All products comply with the Department of Drug Administration (DDA Nepal) and international medical device ISO 13485 protocols.">
+                हाम्रा सबै सर्जिकल उपकरण र औषधिजन्य सामानहरू नेपाल औषधि व्यवस्था विभाग (DDA) मा विधिवत दर्ता तथा अन्तर्राष्ट्रिय गुणस्तर प्रमाणित छन्।
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🚚</div>
+              <h3 class="pillar-title" data-lang-ne="नेपालभर द्रुत तथा सुरक्षित आपूर्ति" data-lang-en="Nepal-wide Fast Dispatch">नेपालभर द्रुत तथा सुरक्षित आपूर्ति</h3>
+              <p class="pillar-desc" data-lang-ne="काठमाडौं उपत्यकाभित्र ४ घण्टामा र उपत्यकाबाहिरका जुनसुकै जिल्ला वा प्रदेशका अस्पतालहरूमा २४ देखि ४८ घण्टाभित्र भरपर्दो डेलिभरी।" data-lang-en="Priority 4-hour local dispatch in Kathmandu Valley and express cargo delivery within 24-48 hours to any hospital across Nepal.">
+                काठमाडौं उपत्यकाभित्र ४ घण्टामा र उपत्यकाबाहिरका जुनसुकै जिल्ला वा प्रदेशका अस्पतालहरूमा २४ देखि ४८ घण्टाभित्र भरपर्दो डेलिभरी।
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🏷️</div>
+              <h3 class="pillar-title" data-lang-ne="पारदर्शी अस्पताल दररेट र भ्याट बिल" data-lang-en="Institutional Pricing & VAT Invoicing">पारदर्शी अस्पताल दररेट र भ्याट बिल</h3>
+              <p class="pillar-desc" data-lang-ne="अस्पताल, नर्सिङ होम र मेडिकल कलेजहरूका लागि विशेष थोक छुट, आधिकारिक भ्याट बिल र स्पष्ट भुक्तानी सुविधा।" data-lang-en="Special institutional procurement discounts, official VAT tax invoicing, and flexible credit payment terms for hospitals.">
+                अस्पताल, नर्सिङ होम र मेडिकल कलेजहरूका लागि विशेष थोक छुट, आधिकारिक भ्याट बिल र स्पष्ट भुक्तानी सुविधा।
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🔧</div>
+              <h3 class="pillar-title" data-lang-ne="बायोमेडिकल इन्जिनियरिङ र वारेन्टी" data-lang-en="Biomedical Support & Official Warranty">बायोमेडिकल इन्जिनियरिङ र वारेन्टी</h3>
+              <p class="pillar-desc" data-lang-ne="बिक्री पछिको नियमित मर्मत, क्यालिब्रेसन, स्पेयर पार्टसको प्रत्याभूति र तालिमप्राप्त इन्जिनियरहरूबाट चौबीसै घण्टा प्राविधिक सेवा।" data-lang-en="Dedicated post-sales support with factory trained biomedical engineers, equipment calibration, and genuine spare parts availability.">
+                बिक्री पछिको नियमित मर्मत, क्यालिब्रेसन, स्पेयर पार्टसको प्रत्याभूति र तालिमप्राप्त इन्जिनियरहरूबाट चौबीसै घण्टा प्राविधिक सेवा।
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Official Credentials Dark Banner -->
+          <div class="credentials-banner">
+            <div class="cred-info">
+              <div class="cred-sub" data-lang-ne="आधिकारिक सरकारी दर्ता र कानुनी विवरण" data-lang-en="Verified Business & Tax Accreditation">आधिकारिक सरकारी दर्ता र कानुनी विवरण</div>
+              <h3 class="cred-title" data-lang-ne="नेपाल औषधि व्यवस्था विभाग दर्ता नं: १४२/MED/२०७९" data-lang-en="DDA Nepal Registered & Verified Healthcare Firm">नेपाल औषधि व्यवस्था विभाग दर्ता नं: १४२/MED/२०७९</h3>
+              <p class="cred-meta">PAN/VAT: ६१५४०९८२१ • ISO 13485:2016 Certified • Tripureshwor, Kathmandu, Nepal</p>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="tel:+9779851000000" class="btn-primary" style="background: #1e293b; border: 1px solid #334155;">
+                <span>📞</span>
+                <span data-lang-ne="तत्काल कल गर्नुहोस्" data-lang-en="Call Sales">तत्काल कल गर्नुहोस्</span>
+              </a>
+
+              <a href="https://wa.me/9779851000000?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%2C%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%E0%A4%88%20%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%A4%E0%A4%A5%E0%A4%BE%20%E0%A4%AD%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%9F%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%B0%E0%A4%A3%20%E0%A4%86%E0%A4%B5%E0%A4%B6%E0%A5%8D%E0%A4%AF%E0%A4%95%20%E0%A4%AA%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%9B%E0%A5%81%E0%A5%A4" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                <span>💬</span>
+                <span data-lang-ne="कागजात सोधपुछ" data-lang-en="Request Documents">कागजात सोधपुछ</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. Hospital Network & Collaborations -->
+      <section id="clients" class="section section-alt">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-badge" style="background: #f1f5f9; color: #334155; border-color: #cbd5e1;" data-lang-ne="स्वास्थ्य संस्था साझेदारी" data-lang-en="Hospital Collaborations">
+              स्वास्थ्य संस्था साझेदारी
+            </div>
+            <h2 class="section-title" data-lang-ne="हाम्रा सेवा र सामानमा विश्वस्त अस्पतालहरू" data-lang-en="Trusted by Leading Hospitals Across Nepal">
+              हाम्रा सेवा र सामानमा विश्वस्त अस्पतालहरू
+            </h2>
+            <p class="section-subtitle" data-lang-ne="नेपालका प्रमुख सरकारी, शिक्षण, प्रादेशिक र प्रतिष्ठित निजी अस्पतालहरूमा हाम्रो निरन्तर आपूर्ति जारी छ।" data-lang-en="Serving national teaching institutes, provincial healthcare hubs, and leading private tertiary care centers.">
+              नेपालका प्रमुख सरकारी, शिक्षण, प्रादेशिक र प्रतिष्ठित निजी अस्पतालहरूमा हाम्रो निरन्तर आपूर्ति जारी छ।
+            </p>
+          </div>
+
+          <!-- Hospitals Grid -->
+          <div id="hospitalsGrid" class="hospitals-grid">
+            <!-- Rendered dynamically by script.js -->
+          </div>
+
+          <!-- Testimonial Quote -->
+          <div class="quote-box">
+            <div class="quote-stars">★★★★★</div>
+            <p class="quote-text" data-lang-ne="“जय नेपाल ट्रेडर्सबाट हामीले नियमित रूपमा सर्जिकल इन्स्ट्रुमेन्ट्स र आइसियूका आवश्यक सामान खरिद गर्दै आएका छौं। सामानको गुणस्तर, समयमै डेलिभरी र तुरुन्त प्राविधिक सहयोगका कारण हाम्रो विश्वास जितेको छ।”" data-lang-en="“Jay Nepal Traders has been a highly reliable partner for our surgical instrument sets and OT consumables. Their responsiveness, genuine product certifications, and quick emergency dispatch make them stand out in Nepal.”">
+              “जय नेपाल ट्रेडर्सबाट हामीले नियमित रूपमा सर्जिकल इन्स्ट्रुमेन्ट्स र आइसियूका आवश्यक सामान खरिद गर्दै आएका छौं। सामानको गुणस्तर, समयमै डेलिभरी र तुरुन्त प्राविधिक सहयोगका कारण हाम्रो विश्वास जितेको छ।”
+            </p>
+            <div class="quote-author" data-lang-ne="वरिष्ठ शल्यचिकित्सक तथा खरिद समिति" data-lang-en="Senior Consultant Surgeon & Procurement Team">वरिष्ठ शल्यचिकित्सक तथा खरिद समिति</div>
+            <div class="quote-role">काठमाडौं, नेपाल (Kathmandu, Nepal)</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 6. Contact, Showroom & Direct RFQ Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-badge" data-lang-ne="सम्पर्क तथा सोधपुछ" data-lang-en="Contact & Procurement">सम्पर्क तथा सोधपुछ</div>
+            <h2 class="section-title" data-lang-ne="हाम्रो कार्यालय तथा शोरुममा सम्पर्क गर्नुहोस्" data-lang-en="Connect with Our Medical Specialists">
+              हाम्रो कार्यालय तथा शोरुममा सम्पर्क गर्नुहोस्
+            </h2>
+            <p class="section-subtitle" data-lang-ne="काठमाडौंको त्रिपुरेश्वरस्थित शोरुममा प्रत्यक्ष आई सामान हेर्न सकिनेछ अथवा फोन, ह्वाट्सएप वा इमेलमार्फत अर्डर दिन सकिनेछ।" data-lang-en="Visit our medical showroom in Tripureshwor, Kathmandu, or connect via hotline, WhatsApp, or email.">
+              काठमाडौंको त्रिपुरेश्वरस्थित शोरुममा प्रत्यक्ष आई सामान हेर्न सकिनेछ अथवा फोन, ह्वाट्सएप वा इमेलमार्फत अर्डर दिन सकिनेछ।
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            
+            <!-- Left Info & Map -->
+            <div class="contact-info-card">
+              <h3 style="font-size: 1.1rem; font-weight: 800; color: #0f172a; margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center;">
+                <span data-lang-ne="आधिकारिक सम्पर्क विवरण" data-lang-en="Official Details">आधिकारिक सम्पर्क विवरण</span>
+                <span style="font-size: 0.7rem; color: #059669; background: #ecfdf5; padding: 0.15rem 0.5rem; border-radius: var(--radius-full); font-weight: 700;">Open</span>
+              </h3>
+
+              <!-- Address -->
+              <div class="contact-item">
+                <div class="contact-icon-wrapper contact-icon-red">📍</div>
+                <div>
+                  <div class="contact-label" data-lang-ne="कार्यालय तथा गोदाम ठेगाना" data-lang-en="Office & Warehouse">कार्यालय तथा गोदाम ठेगाना</div>
+                  <div class="contact-val">त्रिपुरेश्वर, काठमाडौं, नेपाल</div>
+                  <div class="contact-sub">(हस्पिटल इक्विपमेन्ट जोन, त्रिपुरेश्वर)</div>
+                </div>
+              </div>
+
+              <!-- Phones -->
+              <div class="contact-item">
+                <div class="contact-icon-wrapper contact-icon-blue">📞</div>
+                <div>
+                  <div class="contact-label" data-lang-ne="फोन तथा आपतकालीन हटलाइन" data-lang-en="Hotlines">फोन तथा आपतकालीन हटलाइन</div>
+                  <div class="contact-val">
+                    <a href="tel:+9779851000000" style="color: #0f172a;">+977-9851000000</a> (मोबाइल / WhatsApp)
+                  </div>
+                  <div class="contact-sub">01-4250000 (ल्याण्डलाइन)</div>
+                </div>
+              </div>
+
+              <!-- Emails -->
+              <div class="contact-item">
+                <div class="contact-icon-wrapper contact-icon-green">✉️</div>
+                <div>
+                  <div class="contact-label" data-lang-ne="कोटेशन तथा अर्डर इमेल" data-lang-en="Email Quotations">कोटेशन तथा अर्डर इमेल</div>
+                  <div class="contact-val">
+                    <a href="mailto:info@jaynepaltraders.com.np" style="color: #0f172a;">info@jaynepaltraders.com.np</a>
+                  </div>
+                  <div class="contact-sub">orders@jaynepaltraders.com.np</div>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div class="contact-item">
+                <div class="contact-icon-wrapper contact-icon-amber">⏰</div>
+                <div>
+                  <div class="contact-label" data-lang-ne="खुल्ने समय" data-lang-en="Business Hours">खुल्ने समय</div>
+                  <div class="contact-val" style="font-size: 0.8rem;">
+                    आइतबार - शुक्रबार: ९:०० AM - ७:०० PM
+                  </div>
+                  <div class="contact-sub">शनिबार: आकस्मिक अर्डर अन-कल उपलब्ध</div>
+                </div>
+              </div>
+
+              <!-- Direct WhatsApp Button -->
+              <div style="margin-top: 1rem;">
+                <a href="https://wa.me/9779851000000?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20%E0%A4%9C%E0%A4%AF%20%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A1%E0%A4%B0%E0%A5%8D%E0%A4%B8%2C%20%E0%A4%AE%20%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95%20%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A8%20%E0%A4%9 prohibitive%E0%A4%BE%E0%A4%B9%E0%A4%A8%E0%A5%8D%E0%A4%9B%E0%A5%81%E0%A5%A4" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="width: 100%;">
+                  <span>💬</span>
+                  <span data-lang-ne="सिधै ह्वाट्सएपमा कुरा गर्नुहोस्" data-lang-en="Direct WhatsApp Chat">सिधै ह्वाट्सएपमा कुरा गर्नुहोस्</span>
+                </a>
+              </div>
+
+              <!-- Google Map Representation -->
+              <div class="map-container">
+                <iframe 
+                  title="Jay Nepal Traders Kathmandu Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14131.066465814045!2d85.30872685!3d27.6935292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b027c73dbb%3A0xc304ff2b9c71887e!2sTripureshwor%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+            </div>
+
+            <!-- Right: Interactive Quotation Form -->
+            <div class="contact-form-card">
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem;" data-lang-ne="अनलाइन सोधपुछ तथा दररेट फारम" data-lang-en="Online Procurement Inquiry Form">
+                अनलाइन सोधपुछ तथा दररेट फारम
+              </h3>
+              <p style="font-size: 0.825rem; color: #64748b; margin-bottom: 1.5rem;" data-lang-ne="कुनै पनि सामान वा अस्पताल सेटअप सम्बन्धी सोधपुछका लागि फारम भर्नुहोस्। तुरुन्तै जवाफ दिइनेछ।" data-lang-en="Submit requirements below. Receive institutional quotes within minutes.">
+                कुनै पनि सामान वा अस्पताल सेटअप सम्बन्धी सोधपुछका लागि फारम भर्नुहोस्। तुरुन्तै जवाफ दिइनेछ।
+              </p>
+
+              <form onsubmit="handleContactFormSubmit(event)">
+                
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label" data-lang-ne="तपाईंको पूरा नाम *" data-lang-en="Full Name *">तपाईंको पूरा नाम *</label>
+                    <input type="text" id="contactName" class="form-control" required placeholder="उदा: डा. सन्तोष श्रेष्ठ" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" data-lang-ne="अस्पताल / संस्थाको नाम" data-lang-en="Hospital / Facility">अस्पताल / संस्थाको नाम</label>
+                    <input type="text" id="contactHospital" class="form-control" placeholder="उदा: लाइफकेयर अस्पताल..." />
+                  </div>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label" data-lang-ne="सम्पर्क फोन / मोबाइल *" data-lang-en="Phone / Mobile *">सम्पर्क फोन / मोबाइल *</label>
+                    <input type="tel" id="contactPhone" class="form-control" required placeholder="98XXXXXXXX" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" data-lang-ne="इमेल ठेगाना" data-lang-en="Email Address">इमेल ठेगाना</label>
+                    <input type="email" id="contactEmail" class="form-control" placeholder="hospital@example.com" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" data-lang-ne="सोधपुछको विषय *" data-lang-en="Subject *">सोधपुछको विषय *</label>
+                  <input type="text" id="contactSubject" class="form-control" required placeholder="उदा: ओटी लाइट र क्युटरी मेसिनको दररेट सोधपुछ" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" data-lang-ne="विस्तृत सन्देश वा सामानहरूको सूची *" data-lang-en="Details & Requirements *">विस्तृत सन्देश वा सामानहरूको सूची *</label>
+                  <textarea id="contactMessage" rows="4" class="form-control" required placeholder="आवश्यक परिमाण, साइज, डेलिभरी मिति वा विशेष माग यहाँ उल्लेख गर्नुहोस्..."></textarea>
+                </div>
+
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <button type="submit" class="btn-whatsapp" style="flex: 1;">
+                    <span>💬</span>
+                    <span data-lang-ne="ह्वाट्सएपमा सोधपुछ पठाउनुहोस्" data-lang-en="Submit via WhatsApp">ह्वाट्सएपमा सोधपुछ पठाउनुहोस्</span>
+                  </button>
+
+                  <button type="button" class="btn-primary" style="flex: 1; background: #2563eb;" onclick="window.location.href='mailto:info@jaynepaltraders.com.np'">
+                    <span>✉️</span>
+                    <span data-lang-ne="इमेलमार्फत पठाउनुहोस्" data-lang-en="Send via Email">इमेलमार्फत पठाउनुहोस्</span>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        
+        <div class="footer-grid">
+          
+          <!-- Col 1: Brand -->
+          <div>
+            <div class="brand-logo" style="margin-bottom: 1rem;">
+              <div class="js-brand-logo"></div>
+              <div class="logo-text">
+                <span class="logo-title-ne" style="color: #ffffff;">जय नेपाल ट्रेडर्स</span>
+                <span class="logo-title-en">Jay Nepal Traders</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.8rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.25rem;" data-lang-ne="जय नेपाल ट्रेडर्स - नेपालका सरकारी तथा निजी अस्पताल, नर्सिङ होम र डायग्नोस्टिक ल्याबहरूका लागि उच्चस्तरीय सर्जिकल औजार, अपरेसन थिएटर उपकरण र मेडिकल कन्ज्युमेबल्सको भरपर्दो आपूर्तिकर्ता।" data-lang-en="Jay Nepal Traders is a dedicated healthcare equipment supplier delivering precision surgical tools, critical care ICU infrastructure, and sterile medical consumables across Nepal.">
+              जय नेपाल ट्रेडर्स - नेपालका सरकारी तथा निजी अस्पताल, नर्सिङ होम र डायग्नोस्टिक ल्याबहरूका लागि उच्चस्तरीय सर्जिकल औजार, अपरेसन थिएटर उपकरण र मेडिकल कन्ज्युमेबल्सको भरपर्दो आपूर्तिकर्ता।
+            </p>
+
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag-pill" style="background: #1e293b; color: #fca5a5; font-weight: 700;">DDA Reg: 142/MED/2079</span>
+              <span class="tag-pill" style="background: #1e293b; color: #93c5fd; font-weight: 700;">PAN/VAT: 615409821</span>
+            </div>
+          </div>
+
+          <!-- Col 2: Categories -->
+          <div>
+            <h4 class="footer-title" data-lang-ne="प्रमुख उत्पादन वर्ग" data-lang-en="Categories">प्रमुख उत्पादन वर्ग</h4>
+            <ul class="footer-links">
+              <li><a href="#catalog" onclick="selectCategory('surgical-instruments'); scrollToSection('catalog');">सर्जिकल इन्स्ट्रुमेन्ट्स (Surgical)</a></li>
+              <li><a href="#catalog" onclick="selectCategory('hospital-furniture'); scrollToSection('catalog');">अस्पताल फर्निचर र बेड (Furniture)</a></li>
+              <li><a href="#catalog" onclick="selectCategory('ot-icu-equipment'); scrollToSection('catalog');">ओटी र आइसियू उपकरण (OT & ICU)</a></li>
+              <li><a href="#catalog" onclick="selectCategory('patient-monitoring'); scrollToSection('catalog');">डायग्नोस्टिक र मनिटरिङ (Monitors)</a></li>
+              <li><a href="#catalog" onclick="selectCategory('disposables-consumables'); scrollToSection('catalog');">डिस्पोजेबल र कन्ज्युमेबल्स (Consumables)</a></li>
+              <li><a href="#catalog" onclick="selectCategory('orthopedic-implants'); scrollToSection('catalog');">अर्थोपेडिक र ल्याब (Orthopedic)</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Turnkey Solutions -->
+          <div>
+            <h4 class="footer-title" data-lang-ne="अस्पताल सेवाहरू" data-lang-en="Hospital Solutions">अस्पताल सेवाहरू</h4>
+            <ul class="footer-links">
+              <li><a href="#services" onclick="scrollToSection('services');">मोडुलर ओटी सेटअप (Modular OT)</a></li>
+              <li><a href="#services" onclick="scrollToSection('services');">आइसियू पूर्वाधार (ICU Setup)</a></li>
+              <li><a href="#services" onclick="scrollToSection('services');">मेडिकल ग्यास पाइपलाइन (MGPS)</a></li>
+              <li><a href="#services" onclick="scrollToSection('services');">बायोमेडिकल क्यालिब्रेसन (AMC)</a></li>
+              <li><a href="#services" onclick="scrollToSection('services');">थोक टेन्डर आपूर्ति (Tenders)</a></li>
+              <li><a href="javascript:void(0)" onclick="openQuickRfq();" style="color: #f87171; font-weight: 700;">कोटेशन अनुरोध (RFQ)</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Showroom -->
+          <div>
+            <h4 class="footer-title" data-lang-ne="सम्पर्क तथा शोरुम" data-lang-en="Contact & Showroom">सम्पर्क तथा शोरुम</h4>
+            <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.7;">
+              <p style="color: #ffffff; font-weight: 700;">त्रिपुरेश्वर, काठमाडौं, नेपाल</p>
+              <p>(हस्पिटल इक्विपमेन्ट हब)</p>
+              <p style="margin-top: 0.5rem;">
+                फोन: <a href="tel:+9779851000000" style="color: #60a5fa; font-weight: 700;">+977-9851000000</a>
+              </p>
+              <p>ल्याण्डलाइन: 01-4250000</p>
+              <p>इमेल: info@jaynepaltraders.com.np</p>
+              <div style="margin-top: 0.75rem;">
+                <a href="https://wa.me/9779851000000" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">
+                  <span>💬 WhatsApp हटलाइन</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 जय नेपाल ट्रेडर्स (Jay Nepal Traders). सर्वाधिकार सुरक्षित।
+          </div>
+          <div>
+            नेपाल औषधि व्यवस्था विभाग मान्यता प्राप्त • आधिकारिक भ्याट बिल सहित • काठमाडौं, नेपाल
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Floating Actions Hub (Bottom Right) -->
+    <div class="floating-actions-hub">
+      
+      <!-- Back to top button -->
+      <button type="button" id="btnBackToTop" class="floating-action-btn btn-floating-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to Top">
+        ▲
+      </button>
+
+      <!-- Floating Cart Button -->
+      <button type="button" id="floatingCartBtn" class="floating-action-btn btn-floating-cart" style="display: none;" onclick="openCartDrawer()">
+        <span>🛒</span>
+        <span data-lang-ne="कोटेशन सूची" data-lang-en="Quote List">कोटेशन सूची</span>
+        <span id="floatingCartCount" style="background: #ffffff; color: #dc2626; border-radius: 99px; padding: 0.1rem 0.4rem; font-size: 0.7rem; font-weight: 800;">0</span>
+      </button>
+
+      <!-- Direct Phone Call Button -->
+      <a href="tel:+9779851000000" class="floating-action-btn btn-floating-call" title="Call Jay Nepal Traders">
+        📞
+      </a>
+
+      <!-- Floating WhatsApp Button with Pulsing Dot -->
+      <a 
+        href="https://wa.me/9779851000000?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20%E0%A4%9C%E0%A4%AF%20%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A1%E0%A4%B0%E0%A5%8D%E0%A4%B8%2C%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%E0%A4%88%20%E0%A4%85%E0%A4%B8%E0%A5%8D%E0%A4%AA%E0%A4%A4%E0%A4%BE%E0%A4%B2%E0%A4%95%E0%A4%BE%20%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A4%BF%20%E0%A4%B8%E0%A4%B0%E0%A5%8D%E0%A4%9C%E0%A4%BF%E0%A4%95%E0%A4%B2%20%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A5%8B%20%E0%A4%85%E0%A4%B0%E0%A5%8D%E0%A4%A1%E0%A4%B0%20%E0%A4%97%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A5%81%20%E0%A4%AA%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%9B%E0%A5%81%E0%A5%A4" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="floating-action-btn btn-floating-wa"
+        title="WhatsApp Instant Order"
+      >
+        <span class="pulse-dot"></span>
+        <span>💬</span>
+        <span data-lang-ne="तत्काल ह्वाट्सएप अर्डर" data-lang-en="Instant WhatsApp">तत्काल ह्वाट्सएप अर्डर</span>
+      </a>
+
+    </div>
+
+    <!-- Slide-over Quote Cart Drawer -->
+    <div id="cartDrawer" class="drawer-backdrop" onclick="if(event.target === this) closeCartDrawer()">
+      <div class="drawer-panel">
+        
+        <div class="drawer-header">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 1.25rem;">📋</span>
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #0f172a;" data-lang-ne="कोटेशन तथा अर्डर कार्ट" data-lang-en="Quotation & Order Cart">
+              कोटेशन तथा अर्डर कार्ट
+            </h3>
+          </div>
+          <button type="button" class="btn-close-modal" onclick="closeCartDrawer()">✕</button>
+        </div>
+
+        <div id="cartDrawerBody" class="drawer-body">
+          <!-- Filled dynamically by script.js -->
+        </div>
+
+        <div id="cartDrawerFooter" class="drawer-footer">
+          <div class="form-group" style="margin-bottom: 0.65rem;">
+            <label class="form-label" style="font-size: 0.75rem;" data-lang-ne="अस्पताल / संस्थाको नाम *" data-lang-en="Hospital / Facility Name *">अस्पताल / संस्थाको नाम *</label>
+            <input type="text" id="cartHospitalName" class="form-control" placeholder="उदा: कान्ति बाल अस्पताल, काठमाडौं" />
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.45rem;">
+            <button type="button" class="btn-whatsapp" onclick="sendCartWhatsApp()">
+              <span>💬</span>
+              <span data-lang-ne="ह्वाट्सएपमा एकमुष्ट कोटेशन पठाउनुहोस्" data-lang-en="Send Quotation via WhatsApp">ह्वाट्सएपमा एकमुष्ट कोटेशन पठाउनुहोस्</span>
+            </button>
+
+            <button type="button" class="btn-primary" style="background: #2563eb;" onclick="sendCartEmail()">
+              <span>✉️</span>
+              <span data-lang-ne="इमेलमार्फत कोटेशन पठाउनुहोस्" data-lang-en="Send Quotation via Email">इमेलमार्फत कोटेशन पठाउनुहोस्</span>
+            </button>
+
+            <button type="button" class="btn-outline" style="font-size: 0.75rem; padding: 0.4rem;" onclick="clearCart()">
+              <span data-lang-ne="सबै सामान हटाउनुहोस्" data-lang-en="Clear All Items">सबै सामान हटाउनुहोस्</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productDetailModal" class="modal-backdrop" onclick="if(event.target === this) closeProductDetail()">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" data-lang-ne="सामानको विस्तृत विवरण तथा स्पेसिफिकेसन" data-lang-en="Product Technical Specifications">
+            सामानको विस्तृत विवरण तथा स्पेसिफिकेसन
+          </h3>
+          <button type="button" class="btn-close-modal" onclick="closeProductDetail()">✕</button>
+        </div>
+        <div id="productDetailContent" class="modal-body">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick RFQ Modal -->
+    <div id="quickRfqModal" class="modal-backdrop" onclick="if(event.target === this) closeQuickRfq()">
+      <div class="modal-content" style="max-width: 32rem;">
+        <div class="modal-header">
+          <h3 class="modal-title" data-lang-ne="द्रुत कोटेशन अनुरोध (Quick RFQ)" data-lang-en="Quick Quotation Request (RFQ)">
+            द्रुत कोटेशन अनुरोध (Quick RFQ)
+          </h3>
+          <button type="button" class="btn-close-modal" onclick="closeQuickRfq()">✕</button>
+        </div>
+        <div class="modal-body">
+          <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 1.25rem;" data-lang-ne="तपाईंलाई आवश्यक सामान वा सेवा उल्लेख गर्नुहोस्। हामी ५ मिनेटभित्र आधिकारिक दररेट उपलब्ध गराउनेछौं।" data-lang-en="Specify your required equipment. Receive quotation within minutes.">
+            तपाईंलाई आवश्यक सामान वा सेवा उल्लेख गर्नुहोस्। हामी ५ मिनेटभित्र आधिकारिक दररेट उपलब्ध गराउनेछौं।
+          </p>
+          <form onsubmit="handleQuickRfqSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" data-lang-ne="तपाईंको नाम *" data-lang-en="Full Name *">तपाईंको नाम *</label>
+              <input type="text" id="rfqName" class="form-control" required placeholder="उदा: डा. सन्तोष श्रेष्ठ" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-lang-ne="सम्पर्क फोन / मोबाइल *" data-lang-en="Phone / Mobile *">सम्पर्क फोन / मोबाइल *</label>
+              <input type="tel" id="rfqPhone" class="form-control" required placeholder="98XXXXXXXX" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-lang-ne="अस्पताल / क्लिनिकको नाम" data-lang-en="Hospital / Clinic Name">अस्पताल / क्लिनिकको नाम</label>
+              <input type="text" id="rfqHospital" class="form-control" placeholder="उदा: लाइफकेयर अस्पताल..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-lang-ne="आवश्यक सामान वा सेवा *" data-lang-en="Required Equipment / Service *">आवश्यक सामान वा सेवा *</label>
+              <textarea id="rfqRequirements" rows="3" class="form-control" required placeholder="उदा: ५ थान आइसियू बेड र २ थान ओटी लाइट..."></textarea>
+            </div>
+            <button type="submit" class="btn-whatsapp" style="width: 100%; margin-top: 0.5rem;">
+              <span>💬</span>
+              <span data-lang-ne="ह्वाट्सएपमा दररेट माग्नुहोस्" data-lang-en="Request Quote via WhatsApp">ह्वाट्सएपमा दररेट माग्नुहोस्</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pure Standalone JavaScript Application Engine -->
+    <script src="./script.js"></script>
+  </body>
+</html>
